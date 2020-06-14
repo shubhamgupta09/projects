@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Shubham Gupta">
+
+    <title>Friends Campus</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+						<div class="logo"></div>
+        <div id="branding">
+          <h1>FriendsCampus</h1>
+        </div>
+        <nav style="margin-top: 20px">
+          <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+        <h1>Join Our Study Group!</h1>
+        <p>Maharashtra State Board | CBSE | ICSE</p>
+      </div>
+    </section>
+
+    <section id="newsletter">
+      <div>
+        <div>
+							<div class="input">
+								<select id="people_type" onchange="myfunction()">
+									<option value="0"> I Am A... </option>
+									<option value="student">Student</option>
+									<option value="parent">Parent</option>
+									<option value="tutor">Tutor</option>
+									<option value="institute">Institute</option>
+								</select>
+							</div>
+							<div class="input">
+								<input type="text" id="name" placeholder="Enter your name">
+							</div>
+							<div class="input">
+								<input type="text" id="mobile" placeholder="Enter mobile number">
+							</div>
+							<div class="input" id="class" style="display: none;">
+								<select class="classab">
+									<option value="0"> -- Select Class -- </option>
+									<option value="jr_kg">Jr - KG</option>
+									<option value="sr_kg">Sr - KG</option>
+									<option value="class_1">Class 1</option>
+									<option value="class_2">Class 2</option>
+									<option value="class_3">Class 3</option>
+									<option value="class_4">Class 4</option>
+									<option value="class_5">Class 5</option>
+									<option value="class_6">Class 6</option>
+									<option value="class_7">Class 7</option>
+									<option value="class_8">Class 8</option>
+									<option value="class_9">Class 9</option>
+									<option value="class_10">Class 10</option>
+									<option value="class_11">Class 11</option>
+									<option value="class_12">Class 12</option>
+								</select>
+							</div>
+ 							<div class="input" id="board" style="display: none;">
+								<select class="classab">
+									<option value="0"> -- Select Board (Optional) -- </option>
+									<option value="ssc">Maharashtra State Board(SSC)</option>
+									<option value="icse">ICSE</option>
+									<option value="cbse">CBSE</option>
+								</select>
+							</div>
+            </div>
+							<div class="input">
+								<input type="button" class="sbtn" id="submit" value="JOIN STUDY GROUP">
+							</div>
+            </div>
+
+            <script type="text/javascript">
+            function myfunction(){
+              var down = document.getElementById('people_type').value;
+              if (down == "student" || down == "parent") {
+                document.getElementById("class").style.display = "inline";
+                document.getElementById("board").style.display = "inline";
+              }
+              else {
+                document.getElementById("class").style.display = "none";
+                document.getElementById("board").style.display = "none";
+              }
+
+            }
+
+            </script>
+    </section>
+
+
+<section id="maindetail">
+        <div class="text">
+          <h3>HOW IT WORKS - FOR STUDENTS & PARENTS</h3>
+        </div>
+      </section>
+
+<!--<section id="cards">
+<div class="card">
+  <div class="card-image"></div>
+  <div class="card-text">
+    <h2>ASK DOUBTS</h2>
+    <p>Ask questions in the Study Group & Get Instant Answers.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-image2"></div>
+  <div class="card-text">
+    <h2>CHAT WITH EXPERTS</h2>
+    <p>Directly chat with tutors to get a thorough explanation.</p>
+  </div>
+</div>
+
+  <div class="card">
+    <div class="card-image3"></div>
+    <div class="card-text">
+      <h2>LEARN WITH YOUR FRIENDS</h2>
+      <p>Invite your friends to join the group and learn with them.</p>
+    </div>
+  </div>
+</section>-->
+
+<section id="datafield">
+<div class="col-sm-12 how-it-works mb-5">
+					<div class="row right">
+						<div class="col-md-6">
+							<h1 class="feature-heading">ASK DOUBTS</h1>
+							<h4 class="sub-heading">Ask questions in the Study Group &amp; Get Instant Answers.</h4>
+						</div>
+						<div class="col-md-6">
+							<div class="row image-right">
+								<img src="https://friendscampus.com/wp-content/themes/friendscampus/images/home/doubt.jpg">
+							</div>
+						</div>
+					</div>
+
+          <div class="row left">
+						<div class="col-md-6">
+							<div class="row image-left">
+								<img src="https://friendscampus.com/wp-content/themes/friendscampus/images/home/chat.jpg">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<h1 class="feature-heading">CHAT WITH EXPERTS</h1>
+							<h4 class="feature-content sub-heading">Directly chat with tutors to get a thorough explanation.</h4>
+						</div>
+					</div>
+
+          <div class="row right">
+						<div class="col-md-6">
+							<h1 class="feature-heading">LEARN WITH YOUR FRIENDS</h1>
+							<h4 class="feature-content sub-heading">Invite your friends to join the group and learn with them.</h4>
+						</div>
+						<div class="col-md-6">
+							<div class="row image-right">
+								<img src="https://friendscampus.com/wp-content/themes/friendscampus/images/home/friends.jpg">
+							</div>
+						</div>
+					</div>
+</div>
+
+
+</section>
+
+<hr>
+
+<section id="maindetail">
+        <div class="text">
+          <h3>HOW IT WORKS - FOR TUTORS & INSTITUTES</h3>
+        </div>
+      </section>
+
+<!--<section id="cards">
+<div class="card">
+  <div class="card-image4"></div>
+  <div class="card-text">
+    <h2>SOLVE DOUBTS</h2>
+    <p>Answer questions asked by students and build your reputation as an expert tutor</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-image5"></div>
+  <div class="card-text">
+    <h2>CREATE FREE PROFILE</h2>
+    <p>Create a free profile and list your services so that students and parents can directly search you.</p>
+  </div>
+</div>
+
+  <div class="card">
+    <div class="card-image6"></div>
+    <div class="card-text">
+      <h2>JOIN TUTOR COMMUNITY</h2>
+      <p>Join the community of tutors, teachers, and experts to learn and grow together.</p>
+    </div>
+  </div>-->
+
+</section>
+<section id="datafield">
+<div class="col-sm-12 how-it-works mb-5">
+					<div class="row right">
+						<div class="col-md-6">
+							<h1 class="feature-heading">SOLVE DOUBTS</h1>
+							<h4 class="sub-heading">Answer questions asked by students and build your reputation as an expert tutor</h4>
+						</div>
+						<div class="col-md-6">
+							<div class="row image-right">
+								<img src="https://friendscampus.com/wp-content/themes/friendscampus/images/home/doubt-solve.jpg">
+							</div>
+						</div>
+					</div>
+
+          <div class="row left">
+						<div class="col-md-6">
+							<div class="row image-left">
+								<img src="https://friendscampus.com/wp-content/themes/friendscampus/images/home/profile.jpg">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<h1 class="feature-heading">CHAT WITH EXPERTS</h1>
+							<h4 class="feature-content sub-heading">Directly chat with tutors to get a thorough explanation.</h4>
+						</div>
+					</div>
+
+          <div class="row right">
+						<div class="col-md-6">
+							<h1 class="feature-heading">LEARN WITH YOUR FRIENDS</h1>
+							<h4 class="feature-content sub-heading">Invite your friends to join the group and learn with them.</h4>
+						</div>
+						<div class="col-md-6">
+							<div class="row image-right">
+								<img src="https://friendscampus.com/wp-content/themes/friendscampus/images/home/community.jpg">
+							</div>
+						</div>
+					</div>
+</div>
+
+
+</section>
+
+<section id="footerdata">
+<div class="footer">
+  <div class="footer-content">
+    <div class="footer-section about">
+      <h3 class="logo-text">FriendsCampus</h3>
+      <p>FriendsCampus is an Education Platform where students come to find solutions to their doubts, find a personal tutor or even search for Institutes who can help them perform better in exams.</p>
+      <!--<div class="contact">
+        <span><i class="fas fa-phone"></i> &nbsp; +91 7977 0595 11 </span>
+        <span><i class="fas fa-envelope"></i> &nbsp; team@friendscampus.com </span>
+      </div>
+      <div class="socials">
+        <a href="#"><i class="fab-fa-facebook"></i></a>
+        <a href="#"><i class="fab-fa-instagram"></i></a>
+        <a href="#"><i class="fab-fa-twitter"></i></a>
+        <a href="#"><i class="fab-fa-youtube"></i></a>
+      </div>-->
+
+    </div>
+    <div class="footer-section tutor">
+      <h3>For Tutors & Institutes</h3>
+      <br>
+      <ul>
+        <a href="#"><li>Create Free Profile</li></a>
+        <a href="#"><li>Become A Partner</li></a>
+        <a href="#"><li>Download Pro App</li></a>
+      </ul>
+    </div>
+    <div class="footer-section links">
+      <h3>Links</h3>
+      <br>
+      <ul>
+        <a href="#"><li>Home</li></a>
+        <a href="#"><li>About us</li></a>
+        <a href="#"><li>Privacy</li></a>
+        <a href="#"><li>Terms of service</li></a>
+      </ul>
+    </div>
+    <div class="footer-section contact">
+      <h3>Address</h3>
+      <p>503D, Fortune Square, Bldg. No 11, Near Trade Center US Embasy, BKC, Bandra(E), Mumbai: 400051</p>
+      <h3>Phone</h3>
+      <p>+91 7977 0595 11</p>
+      <h3>Email</h3>
+      <p>team@friendscampus.com</p>
+    </div>
+</div>
+
+  <div class="footer-button">
+    &copy; Copyright 2019 | FriendsCampus.
+  </div>
+
+</div>
+</section>
+  </body>
+</html>
